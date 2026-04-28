@@ -1,0 +1,20 @@
+[project]
+name = "VachaSpeech"
+version = "0.1.0"
+description = "A Thai text-to-speech system with an LLM"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "huggingface_hub",
+    "jsonargparse",
+    "pythainlp",
+    "safetensors",
+    "soundfile",
+    "torch",
+    "torchaudio",
+    "transformers<5",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
