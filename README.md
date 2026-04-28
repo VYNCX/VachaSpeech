@@ -23,7 +23,7 @@ from vachaspeech import VachaSpeech
 tts = VachaSpeech()
 
 text = "วันนี้อากาศปลอดโปร่ง ลมพัดเย็นสบาย รู้สึกเหมาะกับการออกไปเดินเล่นหรือจิบกาแฟข้างนอกมากเลย"
-output = tts.generate(text, gender="female")
+output = tts.generate(text, gender="female") # gender = "female" or "male" ปรับตามเสียงต้นฉบับ
 # โคลนเสียง
-tts.decode(output, ref_audio="sample_1.wav", output="output.wav")
+tts.decode(output, ref_audio="examples/sample_1.wav", output="output.wav")
 ```
