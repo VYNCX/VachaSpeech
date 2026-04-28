@@ -22,7 +22,7 @@ from vachaspeech import VachaSpeech
 
 tts = VachaSpeech()
 
-text = """ดาวน้อยจึงส่งแสงลงไปทักทาย หิ่งห้อยเงยหน้าขึ้นและยิ้ม “ถึงแสงเราจะเล็ก แต่ถ้าอยู่ด้วยกัน เราก็จะสว่างขึ้นนะ”"""
+text = "วันนี้อากาศปลอดโปร่ง ลมพัดเย็นสบาย รู้สึกเหมาะกับการออกไปเดินเล่นหรือจิบกาแฟข้างนอกมากเลย"
 output = tts.generate(text, gender="female")
 # โคลนเสียง
 tts.decode(output, ref_audio="sample_1.wav", output="output.wav")
